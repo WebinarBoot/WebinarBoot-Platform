@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.webinar.Api.Test.mapper.TestMapper">
+
+    <resultMap id="BaseResultMap" type="com.webinar.Api.Test.domain.TestDomain">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="testname" column="testName" jdbcType="VARCHAR"/>
+            <result property="testnick" column="testNick" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,testName,testNick
+    </sql>
+</mapper>
